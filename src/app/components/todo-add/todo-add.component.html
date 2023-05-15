@@ -1,0 +1,13 @@
+<div>
+  <label for="input-title">Inserisci titolo:</label>
+  <input type="text" id="input-title" [(ngModel)]="newTodo.title">
+</div>
+<div>
+  <label for="input-description">Inserisci descrizione:</label>
+  <input type="text" id="input-description" [(ngModel)]="newTodo.description">
+</div>
+<div>
+  <label for="input-priority">Inserisci priorità:</label>
+  <input type="number" id="input-priority" [(ngModel)]="newTodo.priority">
+</div>
+<button (click)="saveTodo()">Salva</button>

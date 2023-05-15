@@ -1,0 +1,7 @@
+<!-- se c'è todoDetails, in alternativa si toglie l'ngIf
+  e si mette il "?" in todoDetail?.title e todoDetail?.description -->
+<li *ngIf="todoDetail" class="priority{{todoDetail.priority}}">
+  <h3>{{todoDetail.title}}</h3>
+  <span>{{todoDetail.description}}</span>
+  <button (click)="deleteTodo()">Cancella</button>
+</li>

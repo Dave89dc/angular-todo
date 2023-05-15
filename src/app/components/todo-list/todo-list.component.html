@@ -1,0 +1,6 @@
+<ul>
+  <!-- <li *ngFor="let todo of todoArray">{{todo.title}}</li> -->
+  <!-- per ogni todoArray gli passiamo un todoDetail che come in input ha il suo todo -->
+  <!-- "$event" in questa funzione deleteTodo() usa come parametro quello che è stato emesso da todoDeleted -->
+  <app-todo-detail *ngFor="let todo of todoArray" [todoDetail]="todo" (todoDeleted)="deleteTodo($event)"></app-todo-detail>
+</ul>

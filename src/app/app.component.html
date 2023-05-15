@@ -1,0 +1,6 @@
+<h1>Angular ToDo</h1>
+<!-- Il componente todo list ha una proprietà in input che si chiama
+todoArray, ed essa ne ha una che si chiama todos, quindi creiamo
+una sorta di ponte che collega i vari componenti da infilare in app -->
+<app-todo-list [todoArray]="todos"></app-todo-list>
+<app-todo-add (todoCreated)="addTodo($event)"></app-todo-add>
