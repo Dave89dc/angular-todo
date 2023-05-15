@@ -19,11 +19,15 @@ export class AppComponent {
     {
       title: 'Compra il pane',
       priority: 1
-    }
+    },
+    {
+      title: 'Mangiare la focaccia al formaggio con colata di pesto sopra',
+      priority: 2
+    },
   ];
 
   addTodo(newTodo: Todo){
     this.todos.push(newTodo);
-  };
+  }
 
 }

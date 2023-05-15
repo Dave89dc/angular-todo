@@ -15,6 +15,6 @@ export class TodoAddComponent {
   saveTodo(){
     console.log(this.newTodo);
     this.todoCreated.emit({...this.newTodo}); // facciamo un clone perché sennò gli input di add todo rimangono collegati
-  };
+  }
 
 }
